@@ -7,18 +7,29 @@
     android:layout_height="wrap_content"
     android:padding="@dimen/padding2">
 
-    <ImageView
-        android:id="@+id/ivIcon"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvImageCard"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:alpha="0.7"
-        android:scaleType="fitCenter"
+        android:elevation="@dimen/button_elevation"
+        app:cardCornerRadius="50dp"
         app:layout_constraintBottom_toTopOf="@id/tvLabel"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="ContentDescription"
-        tools:src="@drawable/ic_tours" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ivIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0.7"
+            android:background="@color/lightGreen"
+            android:padding="@dimen/padding2"
+            android:scaleType="fitCenter"
+            app:tint="@color/white"
+            tools:ignore="ContentDescription"
+            tools:src="@drawable/ic_tours" />
+    </androidx.cardview.widget.CardView>
 
     <TextView
         android:id="@+id/tvLabel"
@@ -27,10 +38,10 @@
         android:layout_marginTop="@dimen/margin2"
         android:textAlignment="center"
         android:textSize="@dimen/textSize1"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@id/ivIcon"
-        app:layout_constraintStart_toStartOf="@id/ivIcon"
-        app:layout_constraintTop_toBottomOf="@id/ivIcon"
+        app:layout_constraintEnd_toEndOf="@id/cvImageCard"
+        app:layout_constraintStart_toStartOf="@id/cvImageCard"
+        app:layout_constraintTop_toBottomOf="@id/cvImageCard"
         tools:text="@string/button_label_tours" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

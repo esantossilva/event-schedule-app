@@ -3,6 +3,7 @@
     <dimen name="size0">0dp</dimen>
 
     <dimen name="minimum_button_size">48dp</dimen>
+    <dimen name="button_elevation">4dp</dimen>
 
     <dimen name="margin1">2dp</dimen>
     <dimen name="margin2">4dp</dimen>
@@ -31,4 +32,5 @@
     <dimen name="logo_size">128dp</dimen>
     <dimen name="button_size">76dp</dimen>
     <dimen name="divider_width">2dp</dimen>
+    <dimen name="schedule_button_max_width">100dp</dimen>
 </resources>

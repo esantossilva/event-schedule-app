@@ -7,16 +7,15 @@ class ScheduleRepositoryFake : ScheduleInteractor {
 
     private companion object {
         val scheduleList = listOf(
-            ScheduleModel("Maceió", "13.11", "15h", "Taverna do Fabrizzio"),
-            ScheduleModel("Churros", "13.11", "19h", "Beira Mar"),
-            ScheduleModel("Lagoa", "14.11", "9h", "Lagoa N"),
-            ScheduleModel("Caranguejo", "14.11", "18h", "Barraca da Mazé"),
-            ScheduleModel("Jantar", "15.11", "19h", "Casa da Vó", true),
+            ScheduleModel("Beach day", "26.07", "9h", "Porto de Galinhas"),
+            ScheduleModel("Drinks at the Rooftop", "27.07", "19h", "Ruffo Rooftop"),
+            ScheduleModel("Boat Party", "28.07", "13h", "Pier"),
+            ScheduleModel("Family Dinner", "28.07", "21h", "Restaurant", true),
         )
     }
 
     override fun getMainEvent(): ScheduleModel {
-        return ScheduleModel("Casamento", "16.11", "15h", "Capela N.Sª de Lourdes")
+        return ScheduleModel("Wedding", "29.07", "15h", "Madre de Deus Church")
     }
 
     override fun getScheduleByTitle(title: String): ScheduleModel? = scheduleList.find { it.title == title }

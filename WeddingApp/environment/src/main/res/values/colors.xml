@@ -3,9 +3,12 @@
     <color name="black">#FF000000</color>
     <color name="black60">#99000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="off_white">#E1D2BB</color>
     <color name="darkGrey">#595959</color>
+    <color name="darkGreen">#1C4742</color>
     <color name="lightGreen">#42A89C</color>
     <color name="lightGreen60">#9942A89C</color>
+    <color name="lightestBeige">#D6CEA7</color>
     <color name="lightBeige">#CABE83</color>
     <color name="lightBeige60">#99CABE83</color>
     <color name="darkBeige">#7C7657</color>

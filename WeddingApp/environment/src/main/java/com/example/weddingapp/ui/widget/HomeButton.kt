@@ -35,7 +35,7 @@ class HomeButton(
                         setTextColor(
                             getColor(
                                 R.styleable.HomeButton_tint,
-                                ContextCompat.getColor(context, R.color.darkBeige60)
+                                ContextCompat.getColor(context, R.color.white)
                             )
                         )
                     }
@@ -43,7 +43,7 @@ class HomeButton(
                         setPadding(
                             getDimension(
                                 R.styleable.HomeButton_iconPadding,
-                                0F,
+                                16F,
                             ).toInt()
                         )
                         contentDescription = getString(R.styleable.HomeButton_contentDescription)
@@ -51,7 +51,7 @@ class HomeButton(
                         setColorFilter(
                             getColor(
                                 R.styleable.HomeButton_tint,
-                                ContextCompat.getColor(context, R.color.darkBeige60)
+                                ContextCompat.getColor(context, R.color.black)
                             )
                         )
                     }
