@@ -4,6 +4,7 @@
 
     <dimen name="minimum_button_size">48dp</dimen>
     <dimen name="button_elevation">4dp</dimen>
+    <dimen name="status_bar_height">24dp</dimen>
 
     <dimen name="margin1">2dp</dimen>
     <dimen name="margin2">4dp</dimen>
