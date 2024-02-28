@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_app"
+    android:padding="@dimen/padding4"
+    tools:context=".ui.MainActivity">
+
+    <ImageView
+        android:id="@+id/tvTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding4"
+        android:src="@drawable/ic_monogram"
+        android:text="@string/home_title"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textSize6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvHomeMessage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin4"
+        android:text="@string/home_message"
+        android:textAlignment="center"
+        android:textSize="@dimen/textSize2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+
+    <com.example.weddingapp.ui.widget.HomeButton
+        android:id="@+id/hbTours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin3"
+        android:contentDescription="@string/button_label_tours"
+        app:buttonLabel="@string/button_label_tours"
+        app:iconPadding="@dimen/padding1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:src="@drawable/ic_tours" />
+
+    <com.example.weddingapp.ui.widget.HomeButton
+        android:id="@+id/hbLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin4"
+        android:contentDescription="@string/button_label_location"
+        app:buttonLabel="@string/button_label_location"
+        app:layout_constraintBottom_toTopOf="@id/hbTours"
+        app:layout_constraintEnd_toEndOf="@id/hbTours"
+        app:layout_constraintStart_toStartOf="@id/hbTours"
+        app:src="@drawable/ic_location" />
+
+    <com.example.weddingapp.ui.widget.HomeButton
+        android:id="@+id/hbAccommodation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin4"
+        android:contentDescription="@string/button_label_accommodations"
+        app:buttonLabel="@string/button_label_accommodations"
+        app:iconPadding="@dimen/padding2"
+        app:layout_constraintBottom_toTopOf="@id/hbLocation"
+        app:layout_constraintEnd_toEndOf="@id/hbTours"
+        app:layout_constraintStart_toStartOf="@id/hbTours"
+        app:src="@drawable/ic_accommodations" />
+
+    <com.example.weddingapp.ui.widget.HomeButton
+        android:id="@+id/hbMakeup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin4"
+        android:contentDescription="@string/button_label_makeup"
+        app:buttonLabel="@string/button_label_makeup"
+        app:iconPadding="@dimen/padding1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:src="@drawable/ic_makeup" />
+
+    <com.example.weddingapp.ui.widget.HomeButton
+        android:id="@+id/hbConfirmation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin4"
+        android:contentDescription="@string/button_label_confirmation"
+        app:buttonLabel="@string/button_label_confirmation"
+        app:iconPadding="@dimen/padding2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/hbMakeup"
+        app:layout_constraintEnd_toEndOf="@id/hbMakeup"
+        app:layout_constraintStart_toStartOf="@id/hbMakeup"
+        app:src="@drawable/ic_confirmation" />
+
+    <com.example.weddingapp.ui.widget.HomeButton
+        android:id="@+id/hbGifts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin4"
+        android:contentDescription="@string/button_label_gifts"
+        app:buttonLabel="@string/button_label_gifts"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/hbConfirmation"
+        app:layout_constraintEnd_toEndOf="@id/hbMakeup"
+        app:layout_constraintStart_toStartOf="@id/hbMakeup"
+        app:src="@drawable/ic_gifts" />
+
+    <include
+        android:id="@+id/lSchedule"
+        layout="@layout/widget_shcdule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/hbMakeup"
+        app:layout_constraintStart_toEndOf="@id/hbTours" />
+</androidx.constraintlayout.widget.ConstraintLayout>

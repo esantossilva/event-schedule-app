@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">WeddingApp</string>
+    <string name="home_message">Está chegando um momento muito especial e\nqueremos celebrá-lo juntos com vocês, as pessoas\nimportantes para nós.</string>
+    <string name="home_title">B    \n    E</string>
+
+    <string name="button_label_tours">Passeios</string>
+    <string name="button_label_location">Como Chegar</string>
+    <string name="button_label_accommodations">Hospedagem</string>
+    <string name="button_label_gifts">Presentes</string>
+    <string name="button_label_confirmation">Confirmação</string>
+    <string name="button_label_makeup">Salão</string>
+
+    <!-- Schedule Widget -->
+    <string name="button_wedding">Casamento</string>
+
+    <!-- Content Descriptions -->
+</resources>

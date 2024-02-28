@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="black60">#99000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="darkGrey">#595959</color>
+    <color name="lightGreen">#42A89C</color>
+    <color name="lightGreen60">#9942A89C</color>
+    <color name="lightBeige">#CABE83</color>
+    <color name="lightBeige60">#99CABE83</color>
+    <color name="darkBeige">#7C7657</color>
+    <color name="darkBeige60">#997C7657</color>
+</resources>

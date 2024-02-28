@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clButtonContainer"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/padding3">
+
+    <TextView
+        android:id="@+id/tvLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/minimum_button_size"
+        android:gravity="center"
+        android:textColor="@color/darkBeige"
+        android:textSize="@dimen/textSize2"
+        app:layout_constraintBottom_toTopOf="@id/clDetails"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Jantar na vó" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin3"
+        android:padding="@dimen/padding3"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvLabel">
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/black60"
+            android:textSize="@dimen/textSize1"
+            app:layout_constraintEnd_toStartOf="@id/ivDivider"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="XX.11" />
+
+        <ImageView
+            android:id="@+id/ivDivider"
+            android:layout_width="@dimen/divider_width"
+            android:layout_height="@dimen/size0"
+            android:layout_marginStart="@dimen/margin3"
+            android:src="@drawable/bg_divider"
+            app:layout_constraintBottom_toBottomOf="@id/tvDate"
+            app:layout_constraintEnd_toStartOf="@id/tvTime"
+            app:layout_constraintStart_toEndOf="@id/tvDate"
+            app:layout_constraintTop_toTopOf="@id/tvDate" />
+
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin3"
+            android:gravity="center"
+            android:textColor="@color/black60"
+            android:textSize="@dimen/textSize1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/ivDivider"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="19h" />
+
+        <TextView
+            android:id="@+id/tvLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin3"
+            android:gravity="center"
+            android:textColor="@color/black60"
+            android:textSize="@dimen/textSize1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivDivider"
+            tools:text="Jantar na vó" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
