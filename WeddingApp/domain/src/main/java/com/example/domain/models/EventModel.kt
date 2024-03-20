@@ -1,6 +1,6 @@
 package com.example.domain.models
 
-data class ScheduleModel (
+data class EventModel (
     val title: String,
     val date: String,
     val time: String,

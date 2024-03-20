@@ -5,8 +5,7 @@ import android.util.AttributeSet
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.constraintlayout.widget.ConstraintLayout
-import androidx.core.content.ContextCompat
-import com.example.domain.models.ScheduleModel
+import com.example.domain.models.EventModel
 import com.example.weddingapp.R
 import com.example.weddingapp.databinding.ItemScheduleButtonBinding
 import com.example.weddingapp.ui.setVisible
@@ -54,12 +53,12 @@ class ScheduleButton(
         this.binding.clDetails.setVisible(visible, useGone = true)
     }
 
-    fun setupButton(scheduleModel: ScheduleModel, callback: DisableButtonCallback) {
+    fun setupButton(eventModel: EventModel, callback: DisableButtonCallback) {
         this.binding.apply {
-            tvLabel.text = scheduleModel.title
-            tvDate.text = scheduleModel.date
-            tvTime.text = scheduleModel.time
-            tvLocation.text = scheduleModel.location
+            tvLabel.text = eventModel.title
+            tvDate.text = eventModel.date
+            tvTime.text = eventModel.time
+            tvLocation.text = eventModel.location
 
             clButtonContainer.setOnClickListener {
                 isActive = !isActive

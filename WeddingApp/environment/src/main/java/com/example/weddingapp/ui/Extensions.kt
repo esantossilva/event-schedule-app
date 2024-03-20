@@ -1,22 +1,19 @@
 package com.example.weddingapp.ui
 
 import android.content.Context
-import android.util.Log
 import android.view.View
-import android.widget.RadioGroup
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.constraintlayout.widget.ConstraintSet
-import androidx.constraintlayout.widget.Constraints
 import androidx.core.view.allViews
 import com.example.domain.models.ConnectConstraint
 import com.example.domain.models.ConstraintInstructions
 import com.example.domain.models.DisconnectConstraint
-import com.example.domain.models.ScheduleModel
+import com.example.domain.models.EventModel
 import com.example.weddingapp.ui.widget.ScheduleButton
 
 internal fun ConstraintLayout.addScheduleViews(
     context: Context,
-    scheduleList: List<ScheduleModel>,
+    scheduleList: List<EventModel>,
     horizontalConstraint: View,
     hideAllDetailsCallback: ScheduleButton.DisableButtonCallback
 ) {
