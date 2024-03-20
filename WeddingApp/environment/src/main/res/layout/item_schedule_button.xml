@@ -26,8 +26,8 @@
         android:id="@+id/clDetails"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/margin3"
-        android:padding="@dimen/padding3"
+        android:layout_marginTop="@dimen/margin2"
+        android:padding="@dimen/padding2"
 
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

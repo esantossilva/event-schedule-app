@@ -124,6 +124,8 @@
             layout="@layout/widget_schedule"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin3"
+            android:layout_marginEnd="@dimen/margin3"
             app:layout_constraintTop_toBottomOf="@id/tvHomeMessage"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@id/hbMakeup"
