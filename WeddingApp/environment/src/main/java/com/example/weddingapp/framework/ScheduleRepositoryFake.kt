@@ -1,7 +1,9 @@
 package com.example.weddingapp.framework
 
+import com.example.domain.interactors.ErrorType
 import com.example.domain.interactors.ScheduleInteractor
 import com.example.domain.models.EventModel
+import com.example.domain.utils.Outcome
 
 class ScheduleRepositoryFake : ScheduleInteractor {
 
@@ -18,7 +20,6 @@ class ScheduleRepositoryFake : ScheduleInteractor {
         return Outcome.Success(EventModel("Wedding", "29.07", "15h", "Madre de Deus Church"))
     }
 
-    override fun getScheduleByTitle(title: String): ScheduleModel? = scheduleList.find { it.title == title }
-
-    override fun getScheduleList(): List<ScheduleModel> = scheduleList
+    override fun getEventList(eventId: String): Outcome<List<EventModel>, ErrorType> =
+        Outcome.Success(scheduleList)
 }
