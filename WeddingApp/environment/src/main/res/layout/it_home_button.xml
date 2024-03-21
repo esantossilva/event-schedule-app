@@ -3,33 +3,24 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/clHomeButtonContainer"
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="@drawable/bg_home_button"
     android:padding="@dimen/padding2">
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cvImageCard"
+    <ImageView
+        android:id="@+id/ivIcon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:elevation="@dimen/button_elevation"
-        app:cardCornerRadius="50dp"
-        app:layout_constraintBottom_toTopOf="@id/tvLabel"
+        android:alpha="0.7"
+        android:padding="@dimen/padding2"
+        android:scaleType="fitCenter"
+        app:tint="@color/white"
+        tools:ignore="ContentDescription"
+        tools:src="@drawable/ic_tours"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <ImageView
-            android:id="@+id/ivIcon"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:alpha="0.7"
-            android:background="@color/lightGreen"
-            android:padding="@dimen/padding2"
-            android:scaleType="fitCenter"
-            app:tint="@color/white"
-            tools:ignore="ContentDescription"
-            tools:src="@drawable/ic_tours" />
-    </androidx.cardview.widget.CardView>
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
 
     <TextView
         android:id="@+id/tvLabel"
@@ -40,8 +31,8 @@
         android:textSize="@dimen/textSize1"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@id/cvImageCard"
-        app:layout_constraintStart_toStartOf="@id/cvImageCard"
-        app:layout_constraintTop_toBottomOf="@id/cvImageCard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivIcon"
         tools:text="@string/button_label_tours" />
 </androidx.constraintlayout.widget.ConstraintLayout>

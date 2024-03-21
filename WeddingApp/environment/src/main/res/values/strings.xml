@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">WeddingApp</string>
-    <string name="home_message">Our wedding it\'s almost here! And we want to celebrate\nthis wonderful moment with you, the important\npeople in our lives.</string>
+    <string name="home_message">Our wedding it\'s almost here! And we want to celebrate this wonderful moment with you, the important people in our lives.</string>
+    <string name="schedule_label">Itinerary</string>
 
     <string name="button_label_tours">Tours</string>
     <string name="button_label_location">Location</string>
@@ -11,6 +12,8 @@
 
     <!-- Schedule Widget -->
     <string name="button_wedding">Wedding</string>
+    <string name="couple_photo_description">Couple photo</string>
+    <string name="wedding_monogram_content_description">Wedding monogram</string>
 
     <!-- Content Descriptions -->
 </resources>

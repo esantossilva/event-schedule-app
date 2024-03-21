@@ -51,7 +51,7 @@ class HomeButton(
                         setColorFilter(
                             getColor(
                                 R.styleable.HomeButton_tint,
-                                ContextCompat.getColor(context, R.color.black)
+                                ContextCompat.getColor(context, R.color.white)
                             )
                         )
                     }
