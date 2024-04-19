@@ -16,4 +16,4 @@ Este app engloba a aplicação de:
 
 ## Galeria
 
-https://github.com/esantossilva/event-schedule-app/assets/29383441/2992b102-3635-4509-829a-0d3940abe614
+https://github.com/esantossilva/event-schedule-app/assets/29383441/54a16451-19a2-40ad-9910-83c724c65e49
