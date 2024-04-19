@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="size0">0dp</dimen>
+
+    <dimen name="minimum_button_size">48dp</dimen>
+    <dimen name="button_elevation">4dp</dimen>
+    <dimen name="status_bar_height">24dp</dimen>
+
+    <dimen name="margin1">2dp</dimen>
+    <dimen name="margin2">4dp</dimen>
+    <dimen name="margin3">8dp</dimen>
+    <dimen name="margin4">16dp</dimen>
+    <dimen name="margin5">32dp</dimen>
+    <dimen name="margin6">64dp</dimen>
+    <dimen name="margin7">128dp</dimen>
+
+    <dimen name="padding1">2dp</dimen>
+    <dimen name="padding2">4dp</dimen>
+    <dimen name="padding3">8dp</dimen>
+    <dimen name="padding4">16dp</dimen>
+    <dimen name="padding5">32dp</dimen>
+    <dimen name="padding6">64dp</dimen>
+    <dimen name="padding7">128dp</dimen>
+
+    <dimen name="textSize1">10sp</dimen>
+    <dimen name="textSize2">14sp</dimen>
+    <dimen name="textSize3">16sp</dimen>
+    <dimen name="textSize4">20sp</dimen>
+    <dimen name="textSize5">32sp</dimen>
+    <dimen name="textSize6">40sp</dimen>
+    <dimen name="textSize7">52sp</dimen>
+
+    <dimen name="logo_size">128dp</dimen>
+    <dimen name="button_size">76dp</dimen>
+    <dimen name="divider_width">2dp</dimen>
+    <dimen name="schedule_button_max_width">100dp</dimen>
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ScheduleButton">
+        <attr name="date" format="string" />
+        <attr name="label" format="string" />
+        <attr name="location" format="string" />
+        <attr name="time" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="HomeButton">
+        <attr name="buttonLabel" format="string" />
+        <attr name="contentDescription" format="string" />
+        <attr name="iconPadding" format="dimension" />
+        <attr name="src" format="reference" />
+        <attr name="tint" format="reference|color" />
+    </declare-styleable>
+</resources>

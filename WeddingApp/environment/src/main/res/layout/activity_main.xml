@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainActivity">
+
+    <ImageView
+        android:id="@+id/ivBackground"
+        android:layout_width="@dimen/size0"
+        android:layout_height="224dp"
+        android:src="@drawable/couple"
+        android:scaleType="centerCrop"
+        android:foreground="@drawable/bg_app"
+        android:contentDescription="@string/couple_photo_description"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ScrollView
+        android:layout_width="@dimen/size0"
+        android:layout_height="@dimen/size0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding3"
+            android:background="@color/off_white_rose"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivBackground">
+
+            <ImageView
+                android:id="@+id/ivTitle"
+                android:layout_width="0dp"
+                android:layout_height="148dp"
+                android:padding="@dimen/padding4"
+                android:src="@drawable/monogram"
+                app:tint="@color/darkGreen"
+                android:contentDescription="@string/wedding_monogram_content_description"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvHomeMessage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin1"
+                android:layout_marginStart="@dimen/margin3"
+                android:layout_marginEnd="@dimen/margin3"
+                android:text="@string/home_message"
+                android:textAlignment="center"
+                android:textSize="@dimen/textSize3"
+                android:textColor="@color/darkBeige"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ivTitle" />
+
+            <com.example.weddingapp.ui.widget.HomeButton
+                android:id="@+id/hbAccommodation"
+                android:layout_width="@dimen/size0"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin5"
+                android:contentDescription="@string/button_label_accommodations"
+                app:buttonLabel="@string/button_label_accommodations"
+                app:layout_constraintTop_toBottomOf="@id/tvHomeMessage"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/hbGifts"
+                app:src="@drawable/ic_accommodations" />
+
+            <com.example.weddingapp.ui.widget.HomeButton
+                android:id="@+id/hbGifts"
+                android:layout_width="@dimen/size0"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin3"
+                android:contentDescription="@string/button_label_gifts"
+                app:buttonLabel="@string/button_label_gifts"
+                app:layout_constraintBottom_toBottomOf="@id/hbAccommodation"
+                app:layout_constraintTop_toTopOf="@id/hbAccommodation"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/hbAccommodation"
+                app:src="@drawable/ic_gifts" />
+
+            <com.example.weddingapp.ui.widget.HomeButton
+                android:id="@+id/hbLocation"
+                android:layout_width="@dimen/size0"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin3"
+                android:contentDescription="@string/button_label_location"
+                app:buttonLabel="@string/button_label_location"
+                app:layout_constraintTop_toBottomOf="@id/hbAccommodation"
+                app:layout_constraintEnd_toStartOf="@id/hbConfirmation"
+                app:layout_constraintStart_toStartOf="parent"
+                app:src="@drawable/ic_location" />
+
+            <com.example.weddingapp.ui.widget.HomeButton
+                android:id="@+id/hbConfirmation"
+                android:layout_width="@dimen/size0"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin3"
+                android:layout_marginStart="@dimen/margin3"
+                android:contentDescription="@string/button_label_confirmation"
+                app:buttonLabel="@string/button_label_confirmation"
+                app:layout_constraintTop_toBottomOf="@id/hbGifts"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/hbLocation"
+                app:src="@drawable/ic_confirmation" />
+
+            <com.example.weddingapp.ui.widget.HomeButton
+                android:id="@+id/hbTours"
+                android:layout_width="@dimen/size0"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin3"
+                android:contentDescription="@string/button_label_tours"
+                app:buttonLabel="@string/button_label_tours"
+                app:layout_constraintTop_toBottomOf="@id/hbLocation"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/hbMakeup"
+                app:src="@drawable/ic_tours" />
+
+            <com.example.weddingapp.ui.widget.HomeButton
+                android:id="@+id/hbMakeup"
+                android:layout_width="@dimen/size0"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin3"
+                android:layout_marginStart="@dimen/margin3"
+                android:contentDescription="@string/button_label_makeup"
+                app:buttonLabel="@string/button_label_makeup"
+                app:layout_constraintTop_toBottomOf="@id/hbConfirmation"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/hbTours"
+                app:src="@drawable/ic_makeup" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="@dimen/size0"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin5"
+                android:background="#FFF9F2"
+                app:layout_constraintTop_toBottomOf="@id/hbTours"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <TextView
+                    android:id="@+id/tvScheduleLabel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin3"
+                    android:layout_marginEnd="@dimen/margin3"
+                    android:text="@string/schedule_label"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/textSize5"
+                    android:textColor="@color/darkGreen"
+                    android:textStyle="bold|italic"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <include
+                    android:id="@+id/lSchedule"
+                    layout="@layout/widget_schedule"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin4"
+                    android:layout_marginStart="@dimen/margin3"
+                    android:layout_marginEnd="@dimen/margin3"
+                    app:layout_constraintTop_toBottomOf="@id/tvScheduleLabel"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
